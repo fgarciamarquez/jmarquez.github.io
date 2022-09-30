@@ -1,6 +1,7 @@
 {
   "eablokker.tabsSidebar.config.customTabOrder" : [
-    "\/Applications\/MAMP\/htdocs\/JAVIERGARCIAMARQUEZ\/index.html"
+    "\/Applications\/MAMP\/htdocs\/JAVIERGARCIAMARQUEZ\/index.html",
+    "\/Applications\/MAMP\/htdocs\/JAVIERGARCIAMARQUEZ\/css\/base.css"
   ],
   "workspace.name" : "landing_stand2"
 }
