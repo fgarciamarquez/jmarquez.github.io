@@ -686,6 +686,7 @@ Almendralejo. C.P: 06200 <br> <br>
             $('#error_contact_form').html(
                 '<span class="alert_danger">Ups!, te falta algún dato.</span>');
             return;
+			
           
         };
 
@@ -714,7 +715,7 @@ Almendralejo. C.P: 06200 <br> <br>
                 document.getElementById('llamadaPrompt').style.display = 'none';
 
             } else if (obj.error == 'error') {
-              
+				
                 $("#Contactform_btn").prop('disabled', false);
                 $('#error_contact_form').html('<span class="alert_danger">' + obj.msg + '</span>');
             }
