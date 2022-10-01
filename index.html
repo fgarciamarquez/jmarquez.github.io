@@ -684,7 +684,7 @@ Almendralejo. C.P: 06200 <br> <br>
         if (form_nombre.length == 0 || form_tel.length == 0 || form_email.length == 0 || form_msg.length == 0) {
             
             $('#error_contact_form').html(
-                '<span class="alert_danger">Ups!, te falta algún dato. Todos los campos son requeridos.</span>');
+                '<span class="alert_danger">Ups!, te falta algún dato.</span>');
             return;
           
         };
@@ -692,11 +692,11 @@ Almendralejo. C.P: 06200 <br> <br>
 
         $("#Contactform_btn").prop('disabled', true);
 
-         alert('Datos:'+ form_nombre +'/'+ form_tel +'/'+ form_email +'/'+ form_msg); 
+        //  alert('Datos:'+ form_nombre +'/'+ form_tel +'/'+ form_email +'/'+ form_msg); 
 
         $.ajax({
             type: "POST",
-            url: "http://standarte.es/admin/ajax_jmarquez_form.php",
+            url: "https://standarte.es/admin/ajax_jmarquez_form.php",
             data: {
                 'form_nombre': form_nombre,
                 'form_tel': form_tel,

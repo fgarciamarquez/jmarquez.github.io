@@ -313,12 +313,12 @@ margin-top: 60px;
 }
 
 .alert_danger{
-color: white;
-background: red;
+color: black;
+background: lightcoral;
 }
 .alert_info{
-color: white;
-background: cadetblue;
+color: black;
+background: lightblue;
 }
 .alert_success{
 	color: black;
