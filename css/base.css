@@ -313,13 +313,16 @@ margin-top: 60px;
 }
 
 .alert_danger{
-color: red;
+color: white;
+background: red;
 }
 .alert_info{
-color: blue;
+color: white;
+background: cadetblue;
 }
 .alert_success{
-	color: green;
+	color: black;
+	background: greenyellow;
 	}
 #error_contact_form{
 position: relative;
