@@ -318,6 +318,9 @@ color: red;
 .alert_info{
 color: blue;
 }
+.alert_success{
+	color: green;
+	}
 #error_contact_form{
 position: relative;
 display: float-left;

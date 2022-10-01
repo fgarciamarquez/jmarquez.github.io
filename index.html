@@ -682,17 +682,17 @@ Almendralejo. C.P: 06200 <br> <br>
 
 
         if (form_nombre.length == 0 || form_tel.length == 0 || form_email.length == 0 || form_msg.length == 0) {
-            formError();
+            
             $('#error_contact_form').html(
-                '<div class="alert_danger">Ups!, te falta algún dato.</div>');
+                '<span class="alert_danger">Ups!, te falta algún dato. Todos los campos son requeridos.</span>');
             return;
-            formError();
+          
         };
 
 
         $("#Contactform_btn").prop('disabled', true);
 
-       /*  alert('Datos:'+ form_nombre +'/'+ form_tel +'/'+ form_email ); */
+         alert('Datos:'+ form_nombre +'/'+ form_tel +'/'+ form_email +'/'+ form_msg); 
 
         $.ajax({
             type: "POST",
@@ -710,15 +710,13 @@ Almendralejo. C.P: 06200 <br> <br>
             var obj = jQuery.parseJSON(response);
 
             if (obj.error == 'success') {
-                $('#error_contact_form').html('<div class="alert alert-success"><p class="text-center">' + obj.msg +
-                    '</p></div>');
+                $('#error_contact_form').html('<span class="alert_success">' + obj.msg + '</span>');
                 document.getElementById('llamadaPrompt').style.display = 'none';
 
             } else if (obj.error == 'error') {
-                formError();
+              
                 $("#Contactform_btn").prop('disabled', false);
-                $('#error_contact_form').html('<div class="alert alert-danger"><p class="text-center">' + obj.msg +
-                    '</p></div>');
+                $('#error_contact_form').html('<span class="alert_danger">' + obj.msg + '</span>');
             }
         });
 
