@@ -430,9 +430,9 @@ position: fixed;
 
 /*Imagen corporativa*/
 	.slide--layout-3 .slide__figure:first-child {grid-area: 3 / 6 / 8 / 10; visibility: hidden;}
-	.slide--layout-3 .slide__figure:nth-child(2) {grid-area: 1 / 14 / 13 / 21;}
+	.slide--layout-3 .slide__figure:nth-child(2) {grid-area: 2 / 12 / 11 / 21;}
 	.slide--layout-3 .slide__figure:nth-child(3) {grid-area: 3 / 1 / 18 / 11; }
-	.slide--layout-3 .slide__figure:nth-child(4) {grid-area: 11 / 12 / 21 / 18; }
+	.slide--layout-3 .slide__figure:nth-child(4) {grid-area: 13 / 12 / 24 / 21; }
 
 /*Interiorismo*/
 	.slide--layout-4 .slide__figure:first-child {grid-area: 2 / 2 / 21 / 10;}
@@ -455,9 +455,6 @@ position: fixed;
 		z-index: 100;
 	}
 
-	.slide--layout-1 {
-
-	}
 
 	.slide__figure {
 		width: auto;
