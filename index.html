@@ -366,12 +366,12 @@ Programación de tienda electrónica. &nbsp;<br>
 C/ Francisco Pizarro 14 - 2* -
 Almendralejo. C.P: 06200 <br> <br>
 
-¿Quieres escribirme un correo? <div id="error_contact_form"></div>  <br> <br>
+¿Quieres escribirme un correo? <span id="error_contact_form"></span>  <br> <br>
 
 
 
 
-<form class="Contactform">
+<form onsubmit="return false" class="Contactform">
 	
 	<div class="form_group">
 	<label for="form_nombre">Nombre:</label>
@@ -678,7 +678,7 @@ Almendralejo. C.P: 06200 <br> <br>
         var form_msg = $('#form_msg').val();
 
 
-        $('#error_contact_form').html('<div class="alert alert-info">Enviando...</div>');
+        $('#error_contact_form').html('<span class="alert_info">Enviando...</span>');
 
 
         if (form_nombre.length == 0 || form_tel.length == 0 || form_email.length == 0 || form_msg.length == 0) {
@@ -710,14 +710,14 @@ Almendralejo. C.P: 06200 <br> <br>
             var obj = jQuery.parseJSON(response);
 
             if (obj.error == 'success') {
-                $('#error_prompt').html('<div class="alert alert-success"><p class="text-center">' + obj.msg +
+                $('#error_contact_form').html('<div class="alert alert-success"><p class="text-center">' + obj.msg +
                     '</p></div>');
                 document.getElementById('llamadaPrompt').style.display = 'none';
 
             } else if (obj.error == 'error') {
                 formError();
-                $("#prompt_form_btn").prop('disabled', false);
-                $('#error_prompt').html('<div class="alert alert-danger"><p class="text-center">' + obj.msg +
+                $("#Contactform_btn").prop('disabled', false);
+                $('#error_contact_form').html('<div class="alert alert-danger"><p class="text-center">' + obj.msg +
                     '</p></div>');
             }
         });

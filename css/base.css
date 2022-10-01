@@ -315,6 +315,13 @@ margin-top: 60px;
 .alert_danger{
 color: red;
 }
+.alert_info{
+color: blue;
+}
+#error_contact_form{
+position: relative;
+display: float-left;
+}
 
 form.formPrompt{position: relative;}
 .form_group{ padding-bottom: .1rem;}
