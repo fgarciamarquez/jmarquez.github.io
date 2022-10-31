@@ -141,9 +141,9 @@ Scuola Politecnica di Design (Milán) - Master: Product Design. &nbsp;<br>
 										
 									</span>
 								</div>
-<!--<span class="_play tooltip" title="Imágenes" id="sobrediseno">
+<!-- <span class="_play tooltip" title="Imágenes" id="sobrediseno">
 									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="m442.3 677.6l199.4-156.7a11.3 11.3 0 0 0 0-17.7L442.3 346.4c-7.4-5.8-18.3-.6-18.3 8.8v313.5c0 9.4 10.9 14.7 18.3 8.9z"/><path fill="currentColor" d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"/></svg>
-									</span>-->
+									</span> -->
 							</div>
 							<div class="slide__figure-reveal"></div>
 						</div>
@@ -255,10 +255,10 @@ Programación de tienda electrónica. &nbsp;<br>
 						<figcaption>
 							
 <h3 class="slide__figure-title">Imagen corporativa</h3>
-							<p class="slide__figure-description">Logotipos, Familia de Productos, Fotografía,...</p>
+							<p class="slide__figure-description">Logotipos, Ilustraciones, Videogramas, Fotografía,...</p>
 						</figcaption>
-						<span class="_play tooltip" title="Imágenes" id="sobrediseno">
-									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="m442.3 677.6l199.4-156.7a11.3 11.3 0 0 0 0-17.7L442.3 346.4c-7.4-5.8-18.3-.6-18.3 8.8v313.5c0 9.4 10.9 14.7 18.3 8.9z"/><path fill="currentColor" d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"/></svg>
+						<span class="_play tooltip" title="Carrusel" id="sobremobiliario">
+									<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="lime" d="m442.3 677.6l199.4-156.7a11.3 11.3 0 0 0 0-17.7L442.3 346.4c-7.4-5.8-18.3-.6-18.3 8.8v313.5c0 9.4 10.9 14.7 18.3 8.9z"/><path fill="lime" d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"/></svg>
 									</span>
 					</figure>
 					<figure class="slide__figure">
@@ -636,12 +636,12 @@ Programación de tienda electrónica. &nbsp;<br>
 				setTimeout('changeImageInteriorismo()', time);
 				/* sobreinter.classList.add("display_none"); */
 
-				sobreinterior.classList.add("opaco2");
+				// sobreinterior.classList.add("opaco2");
 			}
 
 			window.onload = changeImageInteriorismo; 
-			var sobreinterior = document.getElementById("sobreinteriorismo");   
-			sobreinterior.addEventListener("click", changeImageInteriorismo);
+			// var sobreinterior = document.getElementById("sobreinteriorismo");   
+			// sobreinterior.addEventListener("click", changeImageInteriorismo);
 
 
 			
@@ -663,30 +663,10 @@ Programación de tienda electrónica. &nbsp;<br>
 				sobremobiliario.classList.add("opaco2");
 			}	
 
-			window.onload = changeImageMobiliario;
-			var sobremobiliario = document.getElementById("sobremobiliario");   
-			sobremobiliario.addEventListener("click", changeImageMobiliario); 
+			// window.onload = changeImageMobiliario;
+			 var sobremobiliario = document.getElementById("sobremobiliario");   
+			 sobremobiliario.addEventListener("click", changeImageMobiliario); 
 			
-
-			//function carrusel diseno
-
-			function changeImageDiseno() {
-				var el = document.getElementById('diseno_portada');
-				el.style.backgroundImage = images_diseno[i];
-				if (i < images_diseno.length - 1) {
-					i++;
-				} else {
-					i = 0;
-				}
-				setTimeout('changeImageDiseno()', time);
-				/* sobrediseno.classList.add("display_none"); */
-
-				sobrediseno.classList.add("opaco2");
-			}
-
-			/* window.onload = changeImageMobiliario; */
-			var sobrediseno = document.getElementById("sobrediseno");   
-			sobrediseno.addEventListener("click", changeImageDiseno);
 
 
 		
@@ -701,61 +681,6 @@ Programación de tienda electrónica. &nbsp;<br>
 
 		</script>
 
-<script>
-    function contact_form() {
-
-        var form_nombre = $('#form_nombre').val();
-        var form_tel = $('#form_tel').val();
-        var form_email = $('#form_email').val();
-        var form_msg = $('#form_msg').val();
-
-
-        $('#error_contact_form').html('<span class="alert_info">Enviando...</span>');
-
-
-        if (form_nombre.length == 0 || form_tel.length == 0 || form_email.length == 0 || form_msg.length == 0) {
-            
-            $('#error_contact_form').html(
-                '<span class="alert_danger">Ups!, te falta algún dato.</span>');
-            return;
-			
-          
-        };
-
-
-        $("#Contactform_btn").prop('disabled', true);
-
-        //  alert('Datos:'+ form_nombre +'/'+ form_tel +'/'+ form_email +'/'+ form_msg); 
-
-        $.ajax({
-            type: "POST",
-            url: "https://standarte.es/admin/ajax_jmarquez_form.php",
-            data: {
-                'form_nombre': form_nombre,
-                'form_tel': form_tel,
-                'form_email': form_email,
-                'form_msg': form_msg
-            }
-
-        }).done(function(response) {
-
-            //Used to parse the json recieved
-            var obj = jQuery.parseJSON(response);
-
-            if (obj.error == 'success') {
-                $('#error_contact_form').html('<span class="alert_success">' + obj.msg + '</span>');
-                document.getElementById('llamadaPrompt').style.display = 'none';
-
-            } else if (obj.error == 'error') {
-				
-                $("#Contactform_btn").prop('disabled', false);
-                $('#error_contact_form').html('<span class="alert_danger">' + obj.msg + '</span>');
-            }
-        });
-
-    }
-
-    </script>
 
 	</body>
 </html>
