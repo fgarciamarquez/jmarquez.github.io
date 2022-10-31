@@ -100,7 +100,7 @@
 
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
-							<div class="slide__figure-img" id="mobiliario_portada" style="background-image: url(img/logo_jmarquez.jpg)">
+							<div class="slide__figure-img" style="background-image: url(img/logo_jmarquez.jpg)">
 								<div class="toggle-content is-visible" id="text_mobiliario">
 									<span class="mini_info_portada">
 Diseñador y Director de Arte <br> 
@@ -195,7 +195,7 @@ Programación de tienda electrónica. &nbsp;<br>
 				<div class="slide slide--layout-2">
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
-							<div class="slide__figure-img" id="diseno_grafico" style="background-image: url(img/p4.jpg)"></div>
+							<div class="slide__figure-img" style="background-image: url(img/p4.jpg)"></div>
 							<div class="slide__figure-reveal"></div>
 						</div>
 						<figcaption>
@@ -249,7 +249,7 @@ Programación de tienda electrónica. &nbsp;<br>
 					</figure>
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/corpo4.jpg)"></div>
+							<div class="slide__figure-img" id="mobiliario_portada" style="background-image: url(img/corpo7.jpg)"></div>
 							<div class="slide__figure-reveal"></div>
 						</div>
 						<figcaption>
@@ -312,8 +312,8 @@ Programación de tienda electrónica. &nbsp;<br>
 							<p class="slide__figure-description">Concepto + Idea + Proyección completa</p>
 						</figcaption>
 					</figure>
-					<span class="slide__number slide__number--left">5</span>
-					<span class="slide__number slide__number--right">6</span>
+					<span class="slide__number slide__number--left">7</span>
+					<span class="slide__number slide__number--right">8</span>
 				</div>
 				<div class="slide slide--layout-5">
 					<figure class="slide__figure">
@@ -356,8 +356,8 @@ Programación de tienda electrónica. &nbsp;<br>
 							<p class="slide__figure-description">&nbsp;</p>
 						</figcaption>
 					</figure>
-					<span class="slide__number slide__number--left">7</span>
-					<span class="slide__number slide__number--right">8</span>
+					<span class="slide__number slide__number--left">9</span>
+					<span class="slide__number slide__number--right">10</span>
 				</div>
 				<div class="slide slide--layout-6">
 					<figure class="slide__figure">
@@ -414,8 +414,8 @@ Programación de tienda electrónica. &nbsp;<br>
 							<p class="slide__figure-description"></p>
 						</figcaption>
 					</figure>
-					<span class="slide__number slide__number--left">9</span>
-					<span class="slide__number slide__number--right">10</span>
+					<span class="slide__number slide__number--left">11</span>
+					<span class="slide__number slide__number--right">12</span>
 				</div>
 				
 
@@ -618,8 +618,11 @@ Programación de tienda electrónica. &nbsp;<br>
 			images_stand[0] = "url(img/stand2.jpg)";
 			images_stand[1] = "url(img/stand1.jpg)";
 			
-			images_mobil[0] = "url(img/javier1.webp)";
-			images_mobil[1] = "url(img/javier2.webp)";
+			images_mobil[0] = "url(img/corpo7.jpg)";
+			images_mobil[1] = "url(img/corpo8.jpg)";
+			images_mobil[2] = "url(img/corpo9.jpg)";
+			images_mobil[3] = "url(img/corpo11.jpg)";
+			images_mobil[4] = "url(img/corpo12.jpg)";
 		
 
 			//function carrusel interiorismo
@@ -662,9 +665,9 @@ Programación de tienda electrónica. &nbsp;<br>
 				sobremobiliario.classList.add("opaco2");
 			}	
 
-			/*window.onload = changeImageMobiliario;*/
+			window.onload = changeImageMobiliario;
 			var sobremobiliario = document.getElementById("sobremobiliario");   
-			/* sobremobiliario.addEventListener("click", changeImageMobiliario); */
+			sobremobiliario.addEventListener("click", changeImageMobiliario); 
 			
 
 			//function carrusel diseno
