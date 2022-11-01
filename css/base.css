@@ -100,7 +100,7 @@ span.play > img {
 	opacity: .5;
 }
 .opaco2 {
-	opacity: .2;
+	opacity: 0;
 }
 
 .display_none {
