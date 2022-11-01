@@ -584,11 +584,9 @@ Programación de tienda electrónica. &nbsp;<br>
 
 		<script>
 		//Initializing
-			var i = 0;
-			var images_inter = []; //array
-			var images_diseno = []; //array
-			var images_mobil = []; //array
-			var time = 3000; // time in millie seconds
+			let i = 0;
+			let images_inter = []; //array
+			var time = 2000; // time in millie seconds
 
 			//images
 
@@ -623,23 +621,12 @@ Programación de tienda electrónica. &nbsp;<br>
 			images_inter[27] = "url(img/b23.jpg)";
 
 
-
-/*interiorismo*/
-			images_diseno[0] = "url(img/int1.jpg)";
-			images_diseno[1] = "url(img/int3.jpg)";
-
-			
-			images_mobil[0] = "url(img/corpo7.jpg)";
-			images_mobil[1] = "url(img/corpo8.jpg)";
-			images_mobil[2] = "url(img/corpo9.jpg)";
-			images_mobil[3] = "url(img/corpo11.jpg)";
-			images_mobil[4] = "url(img/corpo12.jpg)";
 		
 
 			//function carrusel interiorismo
 
 			function changeImageInteriorismo() {
-				var el = document.getElementById('interiorismo_portada');
+				let el = document.getElementById('interiorismo_portada');
 				el.style.backgroundImage = images_inter[i];
 				if (i < images_inter.length - 1) {
 					i++;
@@ -657,18 +644,27 @@ Programación de tienda electrónica. &nbsp;<br>
 			// sobreinterior.addEventListener("click", changeImageInteriorismo);
 
 
-			
+</script>
+		<script>
+			let e = 0;
+			var images_mobil = []; //array
 
-			//function carrusel mobiliario
+
+			images_mobil[0] = "url(img/corpo7.jpg)";
+			images_mobil[1] = "url(img/corpo8.jpg)";
+			images_mobil[2] = "url(img/corpo9.jpg)";
+			images_mobil[3] = "url(img/corpo11.jpg)";
+			images_mobil[4] = "url(img/corpo12.jpg)";
+		
 
 
 			function changeImageMobiliario() {
-				var el = document.getElementById('mobiliario_portada');
-				el.style.backgroundImage = images_mobil[i];
-				if (i < images_mobil.length - 1) {
-					i++;
+				let el = document.getElementById('mobiliario_portada');
+				el.style.backgroundImage = images_mobil[e];
+				if (e < images_mobil.length - 1) {
+					e++;
 				} else {
-					i = 0;
+					e = 0;
 				}
 				setTimeout('changeImageMobiliario()', time);
 				/* sobreinter.classList.add("display_none"); */
