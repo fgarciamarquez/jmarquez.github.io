@@ -78,7 +78,15 @@ padding: 0 3px;
 
 span._play {
 	
-	cursor: pointer;
+	cursor: pointer!important;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	background: #FBD701;
+	padding: .5rem;
+	width: 100px;
+	margin: 0 auto;
 	
 }
 
