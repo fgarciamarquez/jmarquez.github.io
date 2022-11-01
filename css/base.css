@@ -100,6 +100,9 @@ span.play > img {
 	top: 5px;
 	vertical-align: middle;
 }
+._prefijo {
+	color: #FBD701;
+}
 
 .red{
 	color: red;
